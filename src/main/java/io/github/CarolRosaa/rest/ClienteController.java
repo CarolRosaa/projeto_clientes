@@ -20,8 +20,6 @@ public class ClienteController {
     public ClienteController(ClienteRepository repository) {
         this.repository = repository;
     }
-
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Cliente salvar( Cliente cliente ){
